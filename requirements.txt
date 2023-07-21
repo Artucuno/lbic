@@ -1,0 +1,6 @@
+aiohttp==3.8.5
+colorama==0.4.6
+interactions.py @ git+https://github.com/interactions-py/interactions.py.git
+psutil==5.9.5
+pydantic==2.0.3
+python-socketio==5.8.0

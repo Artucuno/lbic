@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>client API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>client</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import asyncio
+import logging
+import traceback
+from typing import Optional
+
+import psutil
+import socketio
+from aiohttp import web
+from colorama import Fore, Style
+from interactions import Client, Intents, listen, IntervalTrigger, Task
+from interactions.api import events
+from interactions.api.events import RawGatewayEvent
+from interactions.api.events.internal import Startup
+from interactions.api.events.processors import Processor
+from interactions.api.gateway.gateway import GatewayClient
+from interactions.api.gateway.state import ConnectionState
+from interactions.client.errors import WebSocketClosed, LibraryException
+from pydantic import BaseModel
+from interactions.ext.paginators import Paginator  # TODO: Add shared paginator
+
+from utils.models import Node, create_node, NodeLoad, ResourceType
+
+
+# logging.basicConfig(level=logging.DEBUG)
+
+class ClientSettings(BaseModel):
+    &#34;&#34;&#34;
+    Settings for the LBIC client
+    &#34;&#34;&#34;
+    socket_identifier: Optional[str] = &#39;default&#39;
+    webserver_port: Optional[int] = 1043
+    socket_urls: Optional[list] = []
+
+    balance_type: Optional[ResourceType] = ResourceType.cpu
+
+
+class GateClient(GatewayClient):
+    def __init__(self, state: ConnectionState, shard_info: tuple[int, int]):
+        super().__init__(state, shard_info)
+        self.con_state = state
+
+    async def dispatch_event(self, data, seq, event) -&gt; None:
+        if event not in [&#39;PRESENCE_UPDATE&#39;]:
+            # print(&#39;dispatch_event&#39;, event)
+            pass
+        if event in [&#39;INTERACTION_CREATE&#39;]:
+            # print(data)
+            lowest_load = min(self.con_state.client.nodes, key=lambda x: x.load.get_resource(self.con_state.client.settings.balance_type))
+            if self.con_state.client._last_load.get_resource(self.con_state.client.settings.balance_type) &lt;= lowest_load.load.get_resource(self.con_state.client.settings.balance_type):
+                print(
+                    f&#34;{Fore.YELLOW}Lowest load is {self.con_state.client.settings.socket_identifier} (This: {self.con_state.client._last_load.get_resource(self.con_state.client.settings.balance_type)} / Lowest: {lowest_load.load.get_resource(self.con_state.client.settings.balance_type)})&#34;)
+                print(f&#34;{Fore.GREEN}Running command{Style.RESET_ALL}&#34;)
+                return await super().dispatch_event(data, seq, event)
+            else:
+                print(
+                    f&#34;{Fore.YELLOW}Lowest load is {lowest_load.name} (Lowest: {lowest_load.load.get_resource(self.con_state.client.settings.balance_type)} / This: {self.con_state.client._last_load.get_resource(self.con_state.client.settings.balance_type)})&#34;)
+                print(f&#34;{Fore.RED}Not running command{Style.RESET_ALL}&#34;)
+                return
+        return await super().dispatch_event(data, seq, event)
+
+
+class ConState(ConnectionState):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    async def _ws_connect(self) -&gt; None:
+        &#34;&#34;&#34;Connect to the Discord Gateway.&#34;&#34;&#34;
+        self.logger.info(f&#34;Shard {self.shard_id} is attempting to connect to gateway...&#34;)
+        try:
+            async with GateClient(self, (self.shard_id, self.client.total_shards)) as self.gateway:
+                try:
+                    await self.gateway.run()
+                finally:
+                    self._shard_ready.clear()
+                    if self.client.total_shards == 1:
+                        self.client.dispatch(events.Disconnect())
+                    else:
+                        self.client.dispatch(events.ShardDisconnect(self.shard_id))
+
+        except WebSocketClosed as ex:
+            if ex.code == 4011:
+                raise LibraryException(&#34;Your bot is too large, you must use shards&#34;) from None
+            if ex.code == 4013:
+                raise LibraryException(f&#34;Invalid Intents have been passed: {self.intents}&#34;) from None
+            if ex.code == 4014:
+                raise LibraryException(
+                    &#34;You have requested privileged intents that have not been enabled or approved. Check the developer dashboard&#34;
+                ) from None
+            raise
+
+        except Exception as e:
+            self.client.dispatch(events.Disconnect())
+            self.logger.error(&#34;&#34;.join(traceback.format_exception(type(e), e, e.__traceback__)))
+
+
+class SIOManager:
+    &#34;&#34;&#34;
+    Manager for SocketIO connections
+    &#34;&#34;&#34;
+    def __init__(self, bot, urls: list[str]):
+        self.bot = bot
+        self.clients = []
+        self.urls = urls
+        for f in urls:
+            self.clients.append(socketio.AsyncClient())
+
+    async def connect(self) -&gt; None:
+        &#34;&#34;&#34;
+        Establish SocketIO messaging channels
+        :return: None
+        &#34;&#34;&#34;
+        print(&#39;Connecting to socket.io&#39;)
+        await asyncio.sleep(20)
+        for f in enumerate(self.urls):
+            print(&#39;Connecting to &#39;, f[1])
+            try:
+                await self.clients[f[0]].connect(f[1])
+                self.clients[f[0]].on(&#39;*&#39;, self.catch_all, namespace=&#39;/&#39;)
+                self.clients[f[0]].event(&#39;connect&#39;, self.on_connect, namespace=&#39;/&#39;)
+                self.clients[f[0]].event(&#39;disconnect&#39;, self.on_disconnect, namespace=&#39;/&#39;)
+                print(f&#34;{Fore.CYAN}[SIOManager] {Fore.GREEN}CONNECTED TO {f[1]}{Style.RESET_ALL}&#34;)
+            except Exception as e:
+                print(f&#34;{Fore.CYAN}[SIOManager] {Fore.RED}FAILED TO CONNECT TO {f[1]}{Style.RESET_ALL}&#34;)
+        await self.emit(&#39;register_node&#39;,
+                        {&#39;identifier&#39;: self.bot.settings.socket_identifier, &#39;load&#39;: self.bot._get_load().dict()})
+
+    async def catch_all(self, event, data):
+        print(f&#34;{Fore.CYAN}[SIOManager] {Fore.GREEN}RECEIVED EVENT -&gt; {event}{Style.RESET_ALL} {data}&#34;)
+
+    async def on_connect(self):
+        print(f&#34;{Fore.CYAN}[SIOManager] {Fore.GREEN}CONNECTED{Style.RESET_ALL}&#34;)
+
+    async def on_disconnect(self):
+        print(f&#34;{Fore.CYAN}[SIOManager] {Fore.RED}DISCONNECTED{Style.RESET_ALL}&#34;)
+
+    def on(self, event, handler, namespace=&#39;/&#39;):
+        for f in self.clients:
+            if f.connected:
+                f.on(event, handler, namespace=namespace)
+
+    async def emit(self, event, data, namespace=&#39;/&#39;):
+        for f in self.clients:
+            if f.connected:
+                await f.emit(event, data, namespace=namespace)
+
+
+class WebServerManager:
+    &#34;&#34;&#34;
+    Manager for the webserver that receives SocketIO messages
+    &#34;&#34;&#34;
+    def __init__(self, bot):
+        self.bot = bot
+        self.web = web.Application()
+        self.sockio = socketio.AsyncServer(async_mode=&#39;aiohttp&#39;)
+        self.sockio.attach(self.web)
+
+    def run_socketio_sync(self):
+        self._register_endpoints()
+        web.run_app(self.web, host=&#39;0.0.0.0&#39;, port=self.bot.settings.webserver_port)
+
+    async def _run_socketio(self):
+        loop = asyncio.get_event_loop()
+        loop.run_in_executor(None, self.run_socketio_sync)
+
+    async def _on_load_update(self, sid, data):
+        print(f&#34;{Fore.CYAN}[WebServerManager]{Fore.YELLOW}[{sid}]{Style.RESET_ALL} Received load update -&gt; &#34;, data)
+        node = self._get_node(data[&#39;identifier&#39;])
+        if node is None:
+            self.bot.nodes.append(create_node(data[&#39;identifier&#39;], data, True))
+        else:
+            node.load = NodeLoad.parse_obj(data)
+
+    async def _on_connect(self, sid, data):
+        print(f&#34;{Fore.CYAN}[WebServerManager]{Fore.YELLOW}[{sid}]{Style.RESET_ALL} Client connected&#34;)
+
+    async def _register_node(self, sid, data):
+        print(f&#34;{Fore.CYAN}[WebServerManager]{Fore.YELLOW}[{sid}]{Style.RESET_ALL} Registered node -&gt; &#34;, data)
+        if data[&#39;identifier&#39;] == self.bot.settings.socket_identifier:
+            return
+        node = self._get_node(data[&#39;identifier&#39;])
+        if node is None:
+            self.bot.nodes.append(create_node(data[&#39;identifier&#39;], data[&#39;load&#39;], True))
+        else:
+            node.load = NodeLoad.parse_obj(data[&#39;load&#39;])
+
+    async def _dashboard_get_load(self, sid):
+        print(f&#34;{Fore.CYAN}[WebServerManager]{Fore.YELLOW}[{sid}]{Style.RESET_ALL} Dashboard requested load&#34;)
+        return self.bot._last_load.dict()
+
+    def _get_node(self, name: str) -&gt; Optional[Node]:
+        for f in self.bot.nodes:
+            if f.name == name:
+                return f
+        return None
+
+    def _register_endpoints(self):
+        self.sockio.on(&#39;connect&#39;, handler=self._on_connect, namespace=&#39;/&#39;)
+        self.sockio.on(&#39;load_update&#39;, handler=self._on_load_update, namespace=&#39;/&#39;)
+        self.sockio.on(&#39;register_node&#39;, handler=self._register_node, namespace=&#39;/&#39;)
+        self.sockio.on(&#39;dashboard_get_load&#39;, handler=self._dashboard_get_load, namespace=&#39;/&#39;)
+
+    def on_event(self, event, handler):
+        self.sockio.on(event, handler)
+
+
+class LoadClient(Client):
+    def __init__(self, settings: ClientSettings = None, **kwargs):
+        &#34;&#34;&#34;
+        Create a new client
+        :param settings: Settings for the client
+        :param kwargs: Arguments to pass to the client
+        &#34;&#34;&#34;
+        super().__init__(**kwargs)
+
+        self.nodes = []
+
+        self._last_load = None
+
+        self.settings = settings or ClientSettings()
+
+        self._connection_state = ConState(client=self, shard_id=kwargs.get(&#39;shard_id&#39;, 0), intents=self.intents)
+        self.sio = SIOManager(self, self.settings.socket_urls)  # Manager for socket.io connections
+        self.webserver = WebServerManager(self)  # Manager for webserver
+
+    @property
+    def socket_identifier(self) -&gt; str:
+        &#34;&#34;&#34;
+        Get the socket identifier
+        :return: str
+        &#34;&#34;&#34;
+        return self.settings.socket_identifier
+
+    @Processor.define(&#34;raw_interaction_create&#34;)
+    async def _dispatch_interaction(self, event: RawGatewayEvent):
+        print(&#39;_dispatch_interaction&#39;, event)
+        await super()._dispatch_interaction.callback(self, event)
+
+    async def _status_checker_task(self):
+        print(f&#34;{Fore.CYAN}[Client]{Style.RESET_ALL} Checking node statuses...&#34;)
+        for f in self.sio.clients:
+            node = self.webserver._get_node(f)
+            if node is None:
+                continue
+            node.connected = f.connected
+            print(
+                f&#34;{Fore.CYAN}[Client]{Style.RESET_ALL} Node {f} is {Fore.GREEN}CONNECTED{Style.RESET_ALL}&#34; if f.connected else f&#34;{Fore.CYAN}[Client]{Style.RESET_ALL} Node {f} is {Fore.RED}DISCONNECTED{Style.RESET_ALL}&#34;)
+
+    def _get_load(self):
+        data = dict(identifier=self.settings.socket_identifier, cpu=psutil.cpu_percent(),
+                    memory=psutil.virtual_memory().percent,
+                    disk=psutil.disk_usage(&#39;/&#39;).percent,
+                    network_up=psutil.net_io_counters().bytes_sent, network_down=psutil.net_io_counters().bytes_recv,
+                    total_cpus=psutil.cpu_count(logical=False), total_threads=psutil.cpu_count(logical=True),
+                    total_memory=psutil.virtual_memory().total, total_disk=psutil.disk_usage(&#39;/&#39;).total,
+                    latency=self.latency)
+        return NodeLoad.parse_obj(data)
+
+    async def _load_update_task(self):
+        print(f&#34;{Fore.CYAN}[Client]{Style.RESET_ALL} Sending load update&#34;)
+        self._last_load = self._get_load()
+        await self.sio.emit(&#39;load_update&#39;, self._last_load.dict())
+
+    @listen(Startup)
+    async def _on_startup(self):
+        print(f&#34;{Fore.CYAN}[Client]{Style.RESET_ALL} Ready&#34;)
+        loop = asyncio.get_event_loop()
+        Task(self._load_update_task, IntervalTrigger(seconds=5)).start()
+        Task(self._status_checker_task, IntervalTrigger(seconds=15)).start()
+
+    def start(self, token: str):
+        loop = asyncio.new_event_loop()
+        task1 = loop.create_task(self.sio.connect())
+        task2 = loop.create_task(super().astart(token))
+        task3 = loop.create_task(self.webserver._run_socketio())
+        try:
+            loop.run_until_complete(asyncio.gather(task1, task2, task3))
+        except KeyboardInterrupt:
+            pass
+        finally:
+            print(&#34;Shutting down...&#34;)
+            loop = asyncio.get_event_loop()
+            loop.run_until_complete(loop.shutdown_asyncgens())
+            loop.close()
+
+    async def astart(self, token: str) -&gt; NotImplementedError:
+        # TODO: Finish
+        raise NotImplementedError(&#34;Unfinished&#34;)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="client.ClientSettings"><code class="flex name class">
+<span>class <span class="ident">ClientSettings</span></span>
+<span>(</span><span>**data: Any)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Settings for the LBIC client</p>
+<p>Create a new model by parsing and validating input data from keyword arguments.</p>
+<p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class ClientSettings(BaseModel):
+    &#34;&#34;&#34;
+    Settings for the LBIC client
+    &#34;&#34;&#34;
+    socket_identifier: Optional[str] = &#39;default&#39;
+    webserver_port: Optional[int] = 1043
+    socket_urls: Optional[list] = []
+
+    balance_type: Optional[ResourceType] = ResourceType.cpu</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>pydantic.main.BaseModel</li>
+<li>pydantic.utils.Representation</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="client.ClientSettings.balance_type"><code class="name">var <span class="ident">balance_type</span> : Optional[utils.models.ResourceType]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="client.ClientSettings.socket_identifier"><code class="name">var <span class="ident">socket_identifier</span> : Optional[str]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="client.ClientSettings.socket_urls"><code class="name">var <span class="ident">socket_urls</span> : Optional[list]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="client.ClientSettings.webserver_port"><code class="name">var <span class="ident">webserver_port</span> : Optional[int]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="client.ConState"><code class="flex name class">
+<span>class <span class="ident">ConState</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Method generated by attrs for class ConnectionState.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class ConState(ConnectionState):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    async def _ws_connect(self) -&gt; None:
+        &#34;&#34;&#34;Connect to the Discord Gateway.&#34;&#34;&#34;
+        self.logger.info(f&#34;Shard {self.shard_id} is attempting to connect to gateway...&#34;)
+        try:
+            async with GateClient(self, (self.shard_id, self.client.total_shards)) as self.gateway:
+                try:
+                    await self.gateway.run()
+                finally:
+                    self._shard_ready.clear()
+                    if self.client.total_shards == 1:
+                        self.client.dispatch(events.Disconnect())
+                    else:
+                        self.client.dispatch(events.ShardDisconnect(self.shard_id))
+
+        except WebSocketClosed as ex:
+            if ex.code == 4011:
+                raise LibraryException(&#34;Your bot is too large, you must use shards&#34;) from None
+            if ex.code == 4013:
+                raise LibraryException(f&#34;Invalid Intents have been passed: {self.intents}&#34;) from None
+            if ex.code == 4014:
+                raise LibraryException(
+                    &#34;You have requested privileged intents that have not been enabled or approved. Check the developer dashboard&#34;
+                ) from None
+            raise
+
+        except Exception as e:
+            self.client.dispatch(events.Disconnect())
+            self.logger.error(&#34;&#34;.join(traceback.format_exception(type(e), e, e.__traceback__)))</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>interactions.api.gateway.state.ConnectionState</li>
+</ul>
+</dd>
+<dt id="client.GateClient"><code class="flex name class">
+<span>class <span class="ident">GateClient</span></span>
+<span>(</span><span>state: interactions.api.gateway.state.ConnectionState, shard_info: tuple[int, int])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Abstraction over one gateway connection.</p>
+<p>Multiple <code>WebsocketClient</code> instances can be used to implement same-process sharding.</p>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><strong><code>sequence</code></strong></dt>
+<dd>The sequence of this connection</dd>
+<dt><strong><code>session_id</code></strong></dt>
+<dd>The session ID of this connection</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class GateClient(GatewayClient):
+    def __init__(self, state: ConnectionState, shard_info: tuple[int, int]):
+        super().__init__(state, shard_info)
+        self.con_state = state
+
+    async def dispatch_event(self, data, seq, event) -&gt; None:
+        if event not in [&#39;PRESENCE_UPDATE&#39;]:
+            # print(&#39;dispatch_event&#39;, event)
+            pass
+        if event in [&#39;INTERACTION_CREATE&#39;]:
+            # print(data)
+            lowest_load = min(self.con_state.client.nodes, key=lambda x: x.load.get_resource(self.con_state.client.settings.balance_type))
+            if self.con_state.client._last_load.get_resource(self.con_state.client.settings.balance_type) &lt;= lowest_load.load.get_resource(self.con_state.client.settings.balance_type):
+                print(
+                    f&#34;{Fore.YELLOW}Lowest load is {self.con_state.client.settings.socket_identifier} (This: {self.con_state.client._last_load.get_resource(self.con_state.client.settings.balance_type)} / Lowest: {lowest_load.load.get_resource(self.con_state.client.settings.balance_type)})&#34;)
+                print(f&#34;{Fore.GREEN}Running command{Style.RESET_ALL}&#34;)
+                return await super().dispatch_event(data, seq, event)
+            else:
+                print(
+                    f&#34;{Fore.YELLOW}Lowest load is {lowest_load.name} (Lowest: {lowest_load.load.get_resource(self.con_state.client.settings.balance_type)} / This: {self.con_state.client._last_load.get_resource(self.con_state.client.settings.balance_type)})&#34;)
+                print(f&#34;{Fore.RED}Not running command{Style.RESET_ALL}&#34;)
+                return
+        return await super().dispatch_event(data, seq, event)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>interactions.api.gateway.gateway.GatewayClient</li>
+<li>interactions.api.gateway.websocket.WebsocketClient</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="client.GateClient.dispatch_event"><code class="name flex">
+<span>async def <span class="ident">dispatch_event</span></span>(<span>self, data, seq, event) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">async def dispatch_event(self, data, seq, event) -&gt; None:
+    if event not in [&#39;PRESENCE_UPDATE&#39;]:
+        # print(&#39;dispatch_event&#39;, event)
+        pass
+    if event in [&#39;INTERACTION_CREATE&#39;]:
+        # print(data)
+        lowest_load = min(self.con_state.client.nodes, key=lambda x: x.load.get_resource(self.con_state.client.settings.balance_type))
+        if self.con_state.client._last_load.get_resource(self.con_state.client.settings.balance_type) &lt;= lowest_load.load.get_resource(self.con_state.client.settings.balance_type):
+            print(
+                f&#34;{Fore.YELLOW}Lowest load is {self.con_state.client.settings.socket_identifier} (This: {self.con_state.client._last_load.get_resource(self.con_state.client.settings.balance_type)} / Lowest: {lowest_load.load.get_resource(self.con_state.client.settings.balance_type)})&#34;)
+            print(f&#34;{Fore.GREEN}Running command{Style.RESET_ALL}&#34;)
+            return await super().dispatch_event(data, seq, event)
+        else:
+            print(
+                f&#34;{Fore.YELLOW}Lowest load is {lowest_load.name} (Lowest: {lowest_load.load.get_resource(self.con_state.client.settings.balance_type)} / This: {self.con_state.client._last_load.get_resource(self.con_state.client.settings.balance_type)})&#34;)
+            print(f&#34;{Fore.RED}Not running command{Style.RESET_ALL}&#34;)
+            return
+    return await super().dispatch_event(data, seq, event)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="client.LoadClient"><code class="flex name class">
+<span>class <span class="ident">LoadClient</span></span>
+<span>(</span><span>settings: <a title="client.ClientSettings" href="#client.ClientSettings">ClientSettings</a> = None, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>The bot client.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>intents</code></strong></dt>
+<dd>The intents to use</dd>
+<dt><strong><code>status</code></strong></dt>
+<dd>The status the bot should log in with (IE ONLINE, DND, IDLE)</dd>
+<dt><strong><code>activity</code></strong></dt>
+<dd>The activity the bot should log in "playing"</dd>
+<dt><strong><code>sync_interactions</code></strong></dt>
+<dd>Should application commands be synced with discord?</dd>
+<dt><strong><code>delete_unused_application_cmds</code></strong></dt>
+<dd>Delete any commands from discord that aren't implemented in this client</dd>
+<dt><strong><code>enforce_interaction_perms</code></strong></dt>
+<dd>Enforce discord application command permissions, locally</dd>
+<dt><strong><code>fetch_members</code></strong></dt>
+<dd>Should the client fetch members from guilds upon startup (this will delay the client being ready)</dd>
+<dt><strong><code>send_command_tracebacks</code></strong></dt>
+<dd>Automatically send uncaught tracebacks if a command throws an exception</dd>
+<dt><strong><code>auto_defer</code></strong></dt>
+<dd>AutoDefer: A system to automatically defer commands after a set duration</dd>
+<dt><strong><code>interaction_context</code></strong></dt>
+<dd>Type[InteractionContext]: InteractionContext: The object to instantiate for Interaction Context</dd>
+<dt><strong><code>component_context</code></strong></dt>
+<dd>Type[ComponentContext]: The object to instantiate for Component Context</dd>
+<dt><strong><code>autocomplete_context</code></strong></dt>
+<dd>Type[AutocompleteContext]: The object to instantiate for Autocomplete Context</dd>
+<dt><strong><code>modal_context</code></strong></dt>
+<dd>Type[ModalContext]: The object to instantiate for Modal Context</dd>
+<dt><strong><code>total_shards</code></strong></dt>
+<dd>The total number of shards in use</dd>
+<dt><strong><code>shard_id</code></strong></dt>
+<dd>The zero based int ID of this shard</dd>
+<dt><strong><code>debug_scope</code></strong></dt>
+<dd>Force all application commands to be registered within this scope</dd>
+<dt><strong><code>disable_dm_commands</code></strong></dt>
+<dd>Should interaction commands be disabled in DMs?</dd>
+<dt><strong><code>basic_logging</code></strong></dt>
+<dd>Utilise basic logging to output library data to console. Do not use in combination with <code>Client.logger</code></dd>
+<dt><strong><code>logging_level</code></strong></dt>
+<dd>The level of logging to use for basic_logging. Do not use in combination with <code>Client.logger</code></dd>
+<dt><strong><code>logger</code></strong></dt>
+<dd>The logger interactions.py should use. Do not use in combination with <code>Client.basic_logging</code> and <code>Client.logging_level</code>. Note: Different loggers with multiple clients are not supported</dd>
+</dl>
+<p>Optionally, you can configure the caches here, by specifying the name of the cache, followed by a dict-style object to use.
+It is recommended to use <code>smart_cache.create_cache</code> to configure the cache here.
+as an example, this is a recommended attribute <code>message_cache=create_cache(250, 50)</code>,</p>
+<p>???+ note "Intents Note"
+By default, all non-privileged intents will be enabled</p>
+<p>???+ note "Caching Note"
+Setting a message cache hard limit to None is not recommended, as it could result in extremely high memory usage, we suggest a sane limit.</p>
+<p>Create a new client
+:param settings: Settings for the client
+:param kwargs: Arguments to pass to the client</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class LoadClient(Client):
+    def __init__(self, settings: ClientSettings = None, **kwargs):
+        &#34;&#34;&#34;
+        Create a new client
+        :param settings: Settings for the client
+        :param kwargs: Arguments to pass to the client
+        &#34;&#34;&#34;
+        super().__init__(**kwargs)
+
+        self.nodes = []
+
+        self._last_load = None
+
+        self.settings = settings or ClientSettings()
+
+        self._connection_state = ConState(client=self, shard_id=kwargs.get(&#39;shard_id&#39;, 0), intents=self.intents)
+        self.sio = SIOManager(self, self.settings.socket_urls)  # Manager for socket.io connections
+        self.webserver = WebServerManager(self)  # Manager for webserver
+
+    @property
+    def socket_identifier(self) -&gt; str:
+        &#34;&#34;&#34;
+        Get the socket identifier
+        :return: str
+        &#34;&#34;&#34;
+        return self.settings.socket_identifier
+
+    @Processor.define(&#34;raw_interaction_create&#34;)
+    async def _dispatch_interaction(self, event: RawGatewayEvent):
+        print(&#39;_dispatch_interaction&#39;, event)
+        await super()._dispatch_interaction.callback(self, event)
+
+    async def _status_checker_task(self):
+        print(f&#34;{Fore.CYAN}[Client]{Style.RESET_ALL} Checking node statuses...&#34;)
+        for f in self.sio.clients:
+            node = self.webserver._get_node(f)
+            if node is None:
+                continue
+            node.connected = f.connected
+            print(
+                f&#34;{Fore.CYAN}[Client]{Style.RESET_ALL} Node {f} is {Fore.GREEN}CONNECTED{Style.RESET_ALL}&#34; if f.connected else f&#34;{Fore.CYAN}[Client]{Style.RESET_ALL} Node {f} is {Fore.RED}DISCONNECTED{Style.RESET_ALL}&#34;)
+
+    def _get_load(self):
+        data = dict(identifier=self.settings.socket_identifier, cpu=psutil.cpu_percent(),
+                    memory=psutil.virtual_memory().percent,
+                    disk=psutil.disk_usage(&#39;/&#39;).percent,
+                    network_up=psutil.net_io_counters().bytes_sent, network_down=psutil.net_io_counters().bytes_recv,
+                    total_cpus=psutil.cpu_count(logical=False), total_threads=psutil.cpu_count(logical=True),
+                    total_memory=psutil.virtual_memory().total, total_disk=psutil.disk_usage(&#39;/&#39;).total,
+                    latency=self.latency)
+        return NodeLoad.parse_obj(data)
+
+    async def _load_update_task(self):
+        print(f&#34;{Fore.CYAN}[Client]{Style.RESET_ALL} Sending load update&#34;)
+        self._last_load = self._get_load()
+        await self.sio.emit(&#39;load_update&#39;, self._last_load.dict())
+
+    @listen(Startup)
+    async def _on_startup(self):
+        print(f&#34;{Fore.CYAN}[Client]{Style.RESET_ALL} Ready&#34;)
+        loop = asyncio.get_event_loop()
+        Task(self._load_update_task, IntervalTrigger(seconds=5)).start()
+        Task(self._status_checker_task, IntervalTrigger(seconds=15)).start()
+
+    def start(self, token: str):
+        loop = asyncio.new_event_loop()
+        task1 = loop.create_task(self.sio.connect())
+        task2 = loop.create_task(super().astart(token))
+        task3 = loop.create_task(self.webserver._run_socketio())
+        try:
+            loop.run_until_complete(asyncio.gather(task1, task2, task3))
+        except KeyboardInterrupt:
+            pass
+        finally:
+            print(&#34;Shutting down...&#34;)
+            loop = asyncio.get_event_loop()
+            loop.run_until_complete(loop.shutdown_asyncgens())
+            loop.close()
+
+    async def astart(self, token: str) -&gt; NotImplementedError:
+        # TODO: Finish
+        raise NotImplementedError(&#34;Unfinished&#34;)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>interactions.client.client.Client</li>
+<li>interactions.api.events.processors.auto_mod.AutoModEvents</li>
+<li>interactions.api.events.processors.channel_events.ChannelEvents</li>
+<li>interactions.api.events.processors.guild_events.GuildEvents</li>
+<li>interactions.api.events.processors.integrations.IntegrationEvents</li>
+<li>interactions.api.events.processors.member_events.MemberEvents</li>
+<li>interactions.api.events.processors.message_events.MessageEvents</li>
+<li>interactions.api.events.processors.reaction_events.ReactionEvents</li>
+<li>interactions.api.events.processors.role_events.RoleEvents</li>
+<li>interactions.api.events.processors.stage_events.StageEvents</li>
+<li>interactions.api.events.processors.thread_events.ThreadEvents</li>
+<li>interactions.api.events.processors.user_events.UserEvents</li>
+<li>interactions.api.events.processors.voice_events.VoiceEvents</li>
+<li>interactions.api.events.processors._template.EventMixinTemplate</li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="client.LoadClient.socket_identifier"><code class="name">var <span class="ident">socket_identifier</span> : str</code></dt>
+<dd>
+<div class="desc"><p>Get the socket identifier
+:return: str</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def socket_identifier(self) -&gt; str:
+    &#34;&#34;&#34;
+    Get the socket identifier
+    :return: str
+    &#34;&#34;&#34;
+    return self.settings.socket_identifier</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="client.LoadClient.astart"><code class="name flex">
+<span>async def <span class="ident">astart</span></span>(<span>self, token: str) ‑> NotImplementedError</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Asynchronous method to start the bot.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>token</code></strong></dt>
+<dd>Your bot's token</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">async def astart(self, token: str) -&gt; NotImplementedError:
+    # TODO: Finish
+    raise NotImplementedError(&#34;Unfinished&#34;)</code></pre>
+</details>
+</dd>
+<dt id="client.LoadClient.start"><code class="name flex">
+<span>def <span class="ident">start</span></span>(<span>self, token: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Start the bot.</p>
+<p>If <code>uvloop</code> is installed, it will be used.</p>
+<p>info:
+This is the recommended method to start the bot</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def start(self, token: str):
+    loop = asyncio.new_event_loop()
+    task1 = loop.create_task(self.sio.connect())
+    task2 = loop.create_task(super().astart(token))
+    task3 = loop.create_task(self.webserver._run_socketio())
+    try:
+        loop.run_until_complete(asyncio.gather(task1, task2, task3))
+    except KeyboardInterrupt:
+        pass
+    finally:
+        print(&#34;Shutting down...&#34;)
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(loop.shutdown_asyncgens())
+        loop.close()</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="client.SIOManager"><code class="flex name class">
+<span>class <span class="ident">SIOManager</span></span>
+<span>(</span><span>bot, urls: list[str])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Manager for SocketIO connections</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class SIOManager:
+    &#34;&#34;&#34;
+    Manager for SocketIO connections
+    &#34;&#34;&#34;
+    def __init__(self, bot, urls: list[str]):
+        self.bot = bot
+        self.clients = []
+        self.urls = urls
+        for f in urls:
+            self.clients.append(socketio.AsyncClient())
+
+    async def connect(self) -&gt; None:
+        &#34;&#34;&#34;
+        Establish SocketIO messaging channels
+        :return: None
+        &#34;&#34;&#34;
+        print(&#39;Connecting to socket.io&#39;)
+        await asyncio.sleep(20)
+        for f in enumerate(self.urls):
+            print(&#39;Connecting to &#39;, f[1])
+            try:
+                await self.clients[f[0]].connect(f[1])
+                self.clients[f[0]].on(&#39;*&#39;, self.catch_all, namespace=&#39;/&#39;)
+                self.clients[f[0]].event(&#39;connect&#39;, self.on_connect, namespace=&#39;/&#39;)
+                self.clients[f[0]].event(&#39;disconnect&#39;, self.on_disconnect, namespace=&#39;/&#39;)
+                print(f&#34;{Fore.CYAN}[SIOManager] {Fore.GREEN}CONNECTED TO {f[1]}{Style.RESET_ALL}&#34;)
+            except Exception as e:
+                print(f&#34;{Fore.CYAN}[SIOManager] {Fore.RED}FAILED TO CONNECT TO {f[1]}{Style.RESET_ALL}&#34;)
+        await self.emit(&#39;register_node&#39;,
+                        {&#39;identifier&#39;: self.bot.settings.socket_identifier, &#39;load&#39;: self.bot._get_load().dict()})
+
+    async def catch_all(self, event, data):
+        print(f&#34;{Fore.CYAN}[SIOManager] {Fore.GREEN}RECEIVED EVENT -&gt; {event}{Style.RESET_ALL} {data}&#34;)
+
+    async def on_connect(self):
+        print(f&#34;{Fore.CYAN}[SIOManager] {Fore.GREEN}CONNECTED{Style.RESET_ALL}&#34;)
+
+    async def on_disconnect(self):
+        print(f&#34;{Fore.CYAN}[SIOManager] {Fore.RED}DISCONNECTED{Style.RESET_ALL}&#34;)
+
+    def on(self, event, handler, namespace=&#39;/&#39;):
+        for f in self.clients:
+            if f.connected:
+                f.on(event, handler, namespace=namespace)
+
+    async def emit(self, event, data, namespace=&#39;/&#39;):
+        for f in self.clients:
+            if f.connected:
+                await f.emit(event, data, namespace=namespace)</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="client.SIOManager.catch_all"><code class="name flex">
+<span>async def <span class="ident">catch_all</span></span>(<span>self, event, data)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">async def catch_all(self, event, data):
+    print(f&#34;{Fore.CYAN}[SIOManager] {Fore.GREEN}RECEIVED EVENT -&gt; {event}{Style.RESET_ALL} {data}&#34;)</code></pre>
+</details>
+</dd>
+<dt id="client.SIOManager.connect"><code class="name flex">
+<span>async def <span class="ident">connect</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Establish SocketIO messaging channels
+:return: None</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">async def connect(self) -&gt; None:
+    &#34;&#34;&#34;
+    Establish SocketIO messaging channels
+    :return: None
+    &#34;&#34;&#34;
+    print(&#39;Connecting to socket.io&#39;)
+    await asyncio.sleep(20)
+    for f in enumerate(self.urls):
+        print(&#39;Connecting to &#39;, f[1])
+        try:
+            await self.clients[f[0]].connect(f[1])
+            self.clients[f[0]].on(&#39;*&#39;, self.catch_all, namespace=&#39;/&#39;)
+            self.clients[f[0]].event(&#39;connect&#39;, self.on_connect, namespace=&#39;/&#39;)
+            self.clients[f[0]].event(&#39;disconnect&#39;, self.on_disconnect, namespace=&#39;/&#39;)
+            print(f&#34;{Fore.CYAN}[SIOManager] {Fore.GREEN}CONNECTED TO {f[1]}{Style.RESET_ALL}&#34;)
+        except Exception as e:
+            print(f&#34;{Fore.CYAN}[SIOManager] {Fore.RED}FAILED TO CONNECT TO {f[1]}{Style.RESET_ALL}&#34;)
+    await self.emit(&#39;register_node&#39;,
+                    {&#39;identifier&#39;: self.bot.settings.socket_identifier, &#39;load&#39;: self.bot._get_load().dict()})</code></pre>
+</details>
+</dd>
+<dt id="client.SIOManager.emit"><code class="name flex">
+<span>async def <span class="ident">emit</span></span>(<span>self, event, data, namespace='/')</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">async def emit(self, event, data, namespace=&#39;/&#39;):
+    for f in self.clients:
+        if f.connected:
+            await f.emit(event, data, namespace=namespace)</code></pre>
+</details>
+</dd>
+<dt id="client.SIOManager.on"><code class="name flex">
+<span>def <span class="ident">on</span></span>(<span>self, event, handler, namespace='/')</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on(self, event, handler, namespace=&#39;/&#39;):
+    for f in self.clients:
+        if f.connected:
+            f.on(event, handler, namespace=namespace)</code></pre>
+</details>
+</dd>
+<dt id="client.SIOManager.on_connect"><code class="name flex">
+<span>async def <span class="ident">on_connect</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">async def on_connect(self):
+    print(f&#34;{Fore.CYAN}[SIOManager] {Fore.GREEN}CONNECTED{Style.RESET_ALL}&#34;)</code></pre>
+</details>
+</dd>
+<dt id="client.SIOManager.on_disconnect"><code class="name flex">
+<span>async def <span class="ident">on_disconnect</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">async def on_disconnect(self):
+    print(f&#34;{Fore.CYAN}[SIOManager] {Fore.RED}DISCONNECTED{Style.RESET_ALL}&#34;)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="client.WebServerManager"><code class="flex name class">
+<span>class <span class="ident">WebServerManager</span></span>
+<span>(</span><span>bot)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Manager for the webserver that receives SocketIO messages</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class WebServerManager:
+    &#34;&#34;&#34;
+    Manager for the webserver that receives SocketIO messages
+    &#34;&#34;&#34;
+    def __init__(self, bot):
+        self.bot = bot
+        self.web = web.Application()
+        self.sockio = socketio.AsyncServer(async_mode=&#39;aiohttp&#39;)
+        self.sockio.attach(self.web)
+
+    def run_socketio_sync(self):
+        self._register_endpoints()
+        web.run_app(self.web, host=&#39;0.0.0.0&#39;, port=self.bot.settings.webserver_port)
+
+    async def _run_socketio(self):
+        loop = asyncio.get_event_loop()
+        loop.run_in_executor(None, self.run_socketio_sync)
+
+    async def _on_load_update(self, sid, data):
+        print(f&#34;{Fore.CYAN}[WebServerManager]{Fore.YELLOW}[{sid}]{Style.RESET_ALL} Received load update -&gt; &#34;, data)
+        node = self._get_node(data[&#39;identifier&#39;])
+        if node is None:
+            self.bot.nodes.append(create_node(data[&#39;identifier&#39;], data, True))
+        else:
+            node.load = NodeLoad.parse_obj(data)
+
+    async def _on_connect(self, sid, data):
+        print(f&#34;{Fore.CYAN}[WebServerManager]{Fore.YELLOW}[{sid}]{Style.RESET_ALL} Client connected&#34;)
+
+    async def _register_node(self, sid, data):
+        print(f&#34;{Fore.CYAN}[WebServerManager]{Fore.YELLOW}[{sid}]{Style.RESET_ALL} Registered node -&gt; &#34;, data)
+        if data[&#39;identifier&#39;] == self.bot.settings.socket_identifier:
+            return
+        node = self._get_node(data[&#39;identifier&#39;])
+        if node is None:
+            self.bot.nodes.append(create_node(data[&#39;identifier&#39;], data[&#39;load&#39;], True))
+        else:
+            node.load = NodeLoad.parse_obj(data[&#39;load&#39;])
+
+    async def _dashboard_get_load(self, sid):
+        print(f&#34;{Fore.CYAN}[WebServerManager]{Fore.YELLOW}[{sid}]{Style.RESET_ALL} Dashboard requested load&#34;)
+        return self.bot._last_load.dict()
+
+    def _get_node(self, name: str) -&gt; Optional[Node]:
+        for f in self.bot.nodes:
+            if f.name == name:
+                return f
+        return None
+
+    def _register_endpoints(self):
+        self.sockio.on(&#39;connect&#39;, handler=self._on_connect, namespace=&#39;/&#39;)
+        self.sockio.on(&#39;load_update&#39;, handler=self._on_load_update, namespace=&#39;/&#39;)
+        self.sockio.on(&#39;register_node&#39;, handler=self._register_node, namespace=&#39;/&#39;)
+        self.sockio.on(&#39;dashboard_get_load&#39;, handler=self._dashboard_get_load, namespace=&#39;/&#39;)
+
+    def on_event(self, event, handler):
+        self.sockio.on(event, handler)</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="client.WebServerManager.on_event"><code class="name flex">
+<span>def <span class="ident">on_event</span></span>(<span>self, event, handler)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_event(self, event, handler):
+    self.sockio.on(event, handler)</code></pre>
+</details>
+</dd>
+<dt id="client.WebServerManager.run_socketio_sync"><code class="name flex">
+<span>def <span class="ident">run_socketio_sync</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def run_socketio_sync(self):
+    self._register_endpoints()
+    web.run_app(self.web, host=&#39;0.0.0.0&#39;, port=self.bot.settings.webserver_port)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="client.ClientSettings" href="#client.ClientSettings">ClientSettings</a></code></h4>
+<ul class="">
+<li><code><a title="client.ClientSettings.balance_type" href="#client.ClientSettings.balance_type">balance_type</a></code></li>
+<li><code><a title="client.ClientSettings.socket_identifier" href="#client.ClientSettings.socket_identifier">socket_identifier</a></code></li>
+<li><code><a title="client.ClientSettings.socket_urls" href="#client.ClientSettings.socket_urls">socket_urls</a></code></li>
+<li><code><a title="client.ClientSettings.webserver_port" href="#client.ClientSettings.webserver_port">webserver_port</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="client.ConState" href="#client.ConState">ConState</a></code></h4>
+</li>
+<li>
+<h4><code><a title="client.GateClient" href="#client.GateClient">GateClient</a></code></h4>
+<ul class="">
+<li><code><a title="client.GateClient.dispatch_event" href="#client.GateClient.dispatch_event">dispatch_event</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="client.LoadClient" href="#client.LoadClient">LoadClient</a></code></h4>
+<ul class="">
+<li><code><a title="client.LoadClient.astart" href="#client.LoadClient.astart">astart</a></code></li>
+<li><code><a title="client.LoadClient.socket_identifier" href="#client.LoadClient.socket_identifier">socket_identifier</a></code></li>
+<li><code><a title="client.LoadClient.start" href="#client.LoadClient.start">start</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="client.SIOManager" href="#client.SIOManager">SIOManager</a></code></h4>
+<ul class="two-column">
+<li><code><a title="client.SIOManager.catch_all" href="#client.SIOManager.catch_all">catch_all</a></code></li>
+<li><code><a title="client.SIOManager.connect" href="#client.SIOManager.connect">connect</a></code></li>
+<li><code><a title="client.SIOManager.emit" href="#client.SIOManager.emit">emit</a></code></li>
+<li><code><a title="client.SIOManager.on" href="#client.SIOManager.on">on</a></code></li>
+<li><code><a title="client.SIOManager.on_connect" href="#client.SIOManager.on_connect">on_connect</a></code></li>
+<li><code><a title="client.SIOManager.on_disconnect" href="#client.SIOManager.on_disconnect">on_disconnect</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="client.WebServerManager" href="#client.WebServerManager">WebServerManager</a></code></h4>
+<ul class="">
+<li><code><a title="client.WebServerManager.on_event" href="#client.WebServerManager.on_event">on_event</a></code></li>
+<li><code><a title="client.WebServerManager.run_socketio_sync" href="#client.WebServerManager.run_socketio_sync">run_socketio_sync</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
